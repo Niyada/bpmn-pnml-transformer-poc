@@ -44,11 +44,11 @@ jobs:
 
       # Run Unit Tests
       - name: Run Unit tests
-        run: python -m unittest discover -s ./test/unit -v
+        run: pytest ./test/unit -v
       
       # Run Integration Tests
       - name: Run Integration tests
-        run: python -m unittest discover -s ./test/integration -v
+        run: pytest ./test/integration -v
       
       # Authenticating at GCP
       # see https://github.com/google-github-actions/deploy-cloud-functions
@@ -96,7 +96,7 @@ jobs:
 
       # Run e2e Tests against Canary Function
       - name: Run e2e tests
-        run: python -m unittest discover -s ./test/e2e -v
+        run: pytest ./test/e2e -v
       
       # Remove Canary Function
       - name: Remove Canary Function
