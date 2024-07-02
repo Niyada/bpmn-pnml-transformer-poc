@@ -28,6 +28,6 @@ wheel==0.43.0
 firebase_admin==6.5.0
 # 
 lxml==5.2.2
-pydantic==2.7.4
+pydantic==2.8.0
 pydantic_xml==2.11.0
 defusedxml==0.7.1
